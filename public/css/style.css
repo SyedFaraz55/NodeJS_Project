@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+:root {
+  --primary:#f43939;
+  --secondary:#f43939;
+  --light:#666;
+  --lightgrey:#eee;
+  --lightdim:#F7FAFC;
+}
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+}
+header {
+  padding:10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+#logo {
+  color:var(--primary);
+}
+.container {
+  width: 92%;
+  margin:0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:4px;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+li a {
+  text-decoration: none;
+  color:black;
+}
+li a:hover {
+  border-bottom:2px solid var(--primary);
+}
+#btn {
+  border:1px solid var(--lightgrey);
+  border-radius: 2px;
+  padding:6px 16px 6px 16px;
+}
+#btn:hover {
+  background:var(--primary);
+  color:white;
+  border-radius: 2px;
+  border-color: var(--secondary) ;
+  transition: 0.2s;
+}
+#browse {
+  padding-top: 10px;
+}
+#small-text {
+  font-size: 1.1rem;
+  color: var(--light);
+  letter-spacing: 1px;
+}
+#hero-section {
+  padding-top: 20px;
+  font-size: 30px;
+  display: flex;
+  /* background-color: #fbfdff; */
+}
+#left-section{
+  background: white;
+  padding:30px 0 0 60px;
+  flex:2;
+}
+#right-section {
+  flex:2;
+  background-image: url('../res/discover.png');
+  background-position: center;
+}
+#leading-text {
+  letter-spacing: 3px;
+  margin-bottom: -10px;
+  color: var(--primary);
+}
+.search-section {
+  margin-top: 20px;
+}
+input[type="text"],input[type="password"],input[type="email"]  {
+    width: 50%;
+    background: #FFFFFF;
+    border: none;
+    border: 1px solid #E2E8EE;
+    box-shadow: 0 0 0 10px rgba(146,151,156,0.03);
+    border-radius: 5px;
+    height: 40px;
+    font-size: 20px;
+    outline: none;
+    padding-left: 0.6em;
+}
+.browse {
+  padding-top: 20px;
+  font-size: 1rem;
+  color: var(--light);
+}
+.browse-icons i {
+  margin-top: 20px;
+  padding:10px;
+  margin-right: 10px;
+  border:1px solid var(--light);
+  border-radius:2px;
+}
+.browse-icons i:hover {
+  background:var(--primary);
+  color:white;
+  cursor: pointer;
+  border-color: white;
+}
+.featured {
+  letter-spacing: 1px;
+  color: var(--light);
+  padding-top: 60px;
+}
+hr {
+margin-top: 10px;
+border: 1px solid var(--lightgrey);
+}
+
+/* Login Page */

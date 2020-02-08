@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>EventBay</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+  <script src="https://kit.fontawesome.com/f6ea8c7853.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div>
+        <h1 id="logo">Event<span id="lg">Bay</span></h1>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="/login">Add Event</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/signup" id="btn">Sign Up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section>
+
+    <div class="wrapper">
+      <div class="error">
+        <% if(error != " ") {  %>
+        <h3 style="color:red;"><%= error %></h3>
+        <%}%>
+        <% if(error_msg != " ") {  %>
+        <h3><%= error_msg %></h3>
+        <%}%>
+        <% if(success_msg != "") {  %>
+        <h3 style="color:green;"><%= success_msg %></h3>
+        <%}%>
+      </div>
+      <h1 style="color:#666">Welcome, login to continue</h1>
+      <div>
+        <form class="" action="/login" method="POST">
+          <div class="form-input">
+            <input type="email" name="email" value="" placeholder="someone@example.com" autocomplete="off">
+          </div>
+          <div class="form-input">
+            <input type="password" name="password" value="" placeholder="Password" autocomplete="off">
+          </div>
+          <input type="submit" name="submit" value="Login" class="btn"><br>
+          <span style="color:#666">OR</span>
+          <div style="margin-bottom:10px"></div>
+          <p><a href="/signup" id="links">Create a new Account </a> | <a href="#" id="links">Forgot Password ?</a></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+<div class="footer">
+  <p>Copyright © 2020–2021 EventBay Inc. All right Reserved</p>
+  <p><i class="fab fa-linkedin"></i> &nbsp;&nbsp;<i class="fab fa-twitter-square"></i>&nbsp;&nbsp;<i class="fab fa-facebook"></i></p>
+</div>
+
+  <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+  <script src="scripts/index.js" charset="utf-8"></script>
+</body>
+
+</html>
